@@ -48,4 +48,14 @@ module.exports = function(app, db) {
     });
   });
 
+  app.get('/restaurants/search/name/:query', (req, res) => {
+    var query = req.params.query;
+    db.collection('restaurant_data').find({restaurant_name: {"$regex": query, "$options": "i"}}).toArray(function(err, items) {
+      if (err) {
+        res.send({'error':'An error has occurred'});
+      } else {
+	      res.send(items);
+      }
+    });
+  });
 };
