@@ -2,6 +2,7 @@ var ObjectID = require('mongodb').ObjectID;
 
 module.exports = function(app, db) {
 
+  //fetch particular restaurant complete details by its id
   app.get('/restaurants/:id', (req, res) => {
     var id = req.params.id;
     var query = { '_id': new ObjectID(id) };
@@ -22,6 +23,7 @@ module.exports = function(app, db) {
     });
   });
 
+  //fetch paginated wise restaurants data
   app.get('/restaurants/page/:page/size/:size', (req, res) => {
     var page = parseInt(req.params.page);
     var size = parseInt(req.params.size);
@@ -34,6 +36,7 @@ module.exports = function(app, db) {
     });
   });
 
+  //sort by column order
   app.get('/restaurants/sort/by/:by/order/:order', (req, res) => {
     var by = req.params.by;
     var order = parseInt(req.params.order);
@@ -48,6 +51,7 @@ module.exports = function(app, db) {
     });
   });
 
+  //Search by restaurant name
   app.get('/restaurants/search/name/:query', (req, res) => {
     var query = req.params.query;
     db.collection('restaurant_data').find({restaurant_name: {"$regex": query, "$options": "i"}}).toArray(function(err, items) {
