@@ -1,0 +1,20 @@
+{
+  "name": "restaurantapi",
+  "version": "1.0.0",
+  "description": "REST API serving business logic for Restaurant App",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "Parv Jain",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "csv-parser": "^2.2.0",
+    "express": "^4.16.4",
+    "mongodb": "^2.2.16"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
