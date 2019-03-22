@@ -7,7 +7,7 @@ const app            = express();
 
 const port = 9000;
 
-const migration = true;
+const migration = false; //true if you want to migrate csv data to mongodb (one time only)
 
 app.use(bodyParser.json({ extended: true }));
 
