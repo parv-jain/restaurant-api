@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "cd04a125-80a0-49bc-b0a1-4f610dd49f36",
+		"name": "restaurants",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get complete restaurant details by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/restaurants/5c954b9305a39069505e4a2e",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"restaurants",
+						"5c954b9305a39069505e4a2e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get paginated restaurants data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/restaurants/page/1/size/10",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"restaurants",
+						"page",
+						"1",
+						"size",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort by votes asc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/restaurants/sort/by/votes/order/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"restaurants",
+						"sort",
+						"by",
+						"votes",
+						"order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort by votes desc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/restaurants/sort/by/votes/order/-1",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"restaurants",
+						"sort",
+						"by",
+						"votes",
+						"order",
+						"-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort by aggregate rating asc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/restaurants/sort/by/aggregate_rating/order/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"restaurants",
+						"sort",
+						"by",
+						"aggregate_rating",
+						"order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort by aggregate rating desc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/restaurants/sort/by/aggregate_rating/order/-1",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"restaurants",
+						"sort",
+						"by",
+						"aggregate_rating",
+						"order",
+						"-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort by avg_cost_for_two asc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/restaurants/sort/by/avg_cost_for_two/order/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"restaurants",
+						"sort",
+						"by",
+						"avg_cost_for_two",
+						"order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort by avg_cost_for_two desc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/restaurants/sort/by/avg_cost_for_two/order/-1",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"restaurants",
+						"sort",
+						"by",
+						"avg_cost_for_two",
+						"order",
+						"-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search by restaurant name regex",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9000/restaurants/search/name/Le",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"restaurants",
+						"search",
+						"name",
+						"Le"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
